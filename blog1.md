@@ -81,7 +81,7 @@ install</i>. Luckily for me, there was useful output that helped me debug
 where the issue was occurring. 
 
 Error Output
-============
+------------
 <pre>
 [ 79%] Linking C shared library _build/dll/libIoPython.dylib
 Undefined symbols for architecture x86_64:
@@ -103,3 +103,11 @@ make[2]: *** [addons/Python/_build/dll/libIoPython.dylib] Error 1
 make[1]: *** [addons/Python/CMakeFiles/IoPython.dir/all] Error 2
 make: *** [all] Error 2
 </pre>
+
+It was at this point that there was clearly something going wrong with Python in the build process. The first thing I looked at was cmake, which I am not familiar with at all. When sifting through the repository, I noticed that every folder had a CMakeLists.txt file. I also noticed there was a Python specific folder in the addons directory with a CMakeLists.txt file as well. When looking at the CMakeLists.txt file it looked greek to me (and I do not understand greek), so I decided to look up the CMake documentation in order to figure out what was going on. It didn't clear up things enough for me, so I next restarted the build process and looked at the output of what CMake produced. A particular line of the build immediately caught my eye.
+<pre>
+-- Found PythonLibs: /Library/Frameworks/Python.framework/Versions/3.5/lib/libpython3.5m.dylib (found version "3.5.1") 
+</pre>
+Since the io programming language has been around for a while, this made me consider if there was something wrong with the versioning. Python changed significantly from v2 to v3 with many different behind the scenes changes. Even though I had both versions installed, it seemed that CMake was grabbing the wrong version. After searching online I discovered that in the CMakeLists.txt file you could specify a EXACT field with a version number. So once that was changed, I tried to install io through the build process again and CMake just errored out at this point because it could only detect the most recent version of python. I decided that maybe I should update the io language to use v3 as opposed to v2. 
+
+When I searched for the particular functions, _PyInt_AS_LONG and _PyString_AsString, it kept bringing me to Python v2.7 documenation. I began to wonder if these were deprecated when v3 was released, and stumbled upon this [article](https://docs.python.org/3/howto/cporting.html).
