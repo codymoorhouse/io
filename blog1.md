@@ -66,7 +66,7 @@ ended up using was <b>grep -rE "ocurre|ocurra|occura|occure" \*</b>. The '\*'
 part of that bit is a wildcard that will search every directory/file in the
 current working directory. Since the working directory was the base directory,
 it will search the contents of the entire project for any pattern that matches
-ocurre, ocurra, occura or occure. Grep will then tell you which files mathed
+ocurre, ocurra, occura or occure. Grep will then tell you which files matched
 the pattern with the associated line number. All I had to do was go into each
 file and fix the spelling accordingly. Once grep would no longer return any
 matches to my specified pattern, I submitted my changes through a pull request
