@@ -69,8 +69,37 @@ it will search the contents of the entire project for any pattern that matches
 ocurre, ocurra, occura or occure. Grep will then tell you which files matched
 the pattern with the associated line number. All I had to do was go into each
 file and fix the spelling accordingly. Once grep would no longer return any
-matches to my specified pattern, I submitted my changes through a pull request
-and it was merged in.
+matches to my specified pattern, I submitted my changes through two pull
+requests and they were merged in.
 
 Artifact #2 - Resuming the Adventure
 ====================================
+As promised, I am now going to talk about the adventures of getting the io
+language to build properly on OSX. When I followed the README.md instructions,
+as I said earlier, it failed to build on the command <i>make
+install</i>. Luckily for me, there was useful output that helped me debug
+where the issue was occurring. 
+
+Error Output
+============
+<pre>
+[ 79%] Linking C shared library _build/dll/libIoPython.dylib
+Undefined symbols for architecture x86_64:
+  "_PyInt_AS_LONG", referenced from:
+      _convertPy in IoPython.c.o
+  "_PyInt_Check", referenced from:
+      _convertPy in IoPython.c.o
+  "_PyString_AsString", referenced from:
+      _convertPy in IoPython.c.o
+  "_PyString_Check", referenced from:
+      _convertPy in IoPython.c.o
+  "_PyString_FromString", referenced from:
+      _IoPython_import in IoPython.c.o
+      _convertIo in IoPython.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see
+invocation)
+make[2]: *** [addons/Python/_build/dll/libIoPython.dylib] Error 1
+make[1]: *** [addons/Python/CMakeFiles/IoPython.dir/all] Error 2
+make: *** [all] Error 2
+</pre>
