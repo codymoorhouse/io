@@ -20,9 +20,9 @@ mind is the <b>io</b> programming language.
 What is io programming language you ask? Well simply put, the io programming
 language boasts expressiveness through simplicity (well according to their
 website anyways...). It establishes that the language is pure, dynamic,
-concurrent and accessible.
-ADD MORE INTRO CONTENT HERE
-===========================
+concurrent and accessible. You can find more information about the io language
+[here](http://iolanguage.org/about.html).
+
 
 Artifact #1 - Need a Tissue? Grab an Issue 
 ==========================================
