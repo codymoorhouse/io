@@ -115,9 +115,11 @@ order to figure out what was going on. It didn't clear up things enough for
 me, so I next restarted the build process and looked at the output of what
 CMake produced. A particular line of the build immediately caught my eye.
 
-<pre>
--- Found PythonLibs: /Library/Frameworks/Python.framework/Versions/3.5/lib/libpython3.5m.dylib (found version "3.5.1") 
-</pre>
+<p>
+-- Found PythonLibs: 
+/Library/Frameworks/Python.framework/Versions/3.5/lib/libpython3.5m.dylib 
+(found version "3.5.1") 
+</p>
 
 Since the io programming language has been around for a while, this made me
 consider if there was something wrong with the versioning. Python had many
