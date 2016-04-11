@@ -1,4 +1,4 @@
-April 11, 2016 <br>
+April 11th, 2016 <br>
 Blog Post #2 <br>
 Cody Moorhouse <br>
 
@@ -91,18 +91,18 @@ intended behaviour that I desired. So I went onto GitHub to look at the
 network graph for the io programming language to see where mig-hub's changes
 first started to appear. I then used the command:
 
-<pre> git reset --hard 8956a60c90f9595c0a61e610c9d00a8d810b3282</pre>
+<pre>git reset --hard 8956a60c90f9595c0a61e610c9d00a8d810b3282</pre>
 
 This reset my new branch to the point in time just before mig-hub began to
 make changes. I now could pull all of mig-hub's changes without any conflicts,
 which is exactly what I did. the next command I issed was:
 
-<pre> git pull https://github.com/mig-hub/io.git </pre>
+<pre>git pull https://github.com/mig-hub/io.git</pre>
 
 This command allowed me to grab all of mig-hubs changes and <i>mimick</i> his
 repository. It was at this point in time that I could start to deal with the
 merge conflicts that would ensue. 
 
-<pre> git merge upstream/master </pre>
+<pre>git merge upstream/master</pre>
 
-
+To my suprise there was only one conflict, 

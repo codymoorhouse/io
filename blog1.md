@@ -1,4 +1,4 @@
-March 16, 2016 <br>
+March 16th, 2016 <br>
 Blog Post #1 <br>
 Cody Moorhouse <br>
 
