@@ -7,7 +7,7 @@ Re-Introduction
 ===============
 
 In my [previous
-blog](https://github.com/codymoorhouse/io/blob/blog-branch/blog1.md), I went
+blog](/blog1.md), I went
 over a brief introduction of what the io programming language is about. The io
 programming language was designed to establish expressiveness through
 simplicity. It is advertised as being pure, dynamic, concurent and
