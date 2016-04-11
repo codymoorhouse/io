@@ -117,7 +117,7 @@ the entire process over. I just had to add an extra step to make sure that I
 was on the correct branch BEFORE I merged with the upstream/master. I issued
 the command:
 
-<pre>git checkout -b "implicit-declarations"<pre>. 
+<pre>git checkout -b "implicit-declarations"</pre> 
 
 I then decided it was cruel to just throw away all those typos that mig-hub
 had fixed. Utilizing my google skills, I found a
