@@ -2,6 +2,11 @@ April 11, 2016 <br>
 Blog Post #2 <br>
 Cody Moorhouse <br>
 
+Table of Contents
+=================
+ - [Re-Introduction](#re-introduction)
+ - [Artifact #3](#artifact-3---a-can-of-fizzbuzz)
+ - [Artifact #4](#artifact-4--)
 
 Re-Introduction
 ===============
@@ -45,20 +50,28 @@ depending on its divisibility. This small screening challenge has turned away
 an embarrassing large amount of applicants who should have the neccessary
 skills based on their experience. 
 
-When writing the program itself I fled to the documentation for the io
+When writing the program itself I went to the documentation of the io
 language to see the syntax for how to write a program. I also reviewed some of
 the sample programs that were already part of the existing project. The syntax
 was slightly awkward to work with because it used keywords for things such as
-the 'and' and 'or' operators (as opposed to '&&' and '||'). Further to that,
-when writing conditonal/iterative statements, braces '{ }' were no longer used
-for blocks. Instead a block was started by a ',' and ended with a right
-parenthesis. 
+the <i>and</i> and <i>or</i> operators (as opposed to <i>&&</i> and <i>||</i>). Further to that,
+when writing conditonal/iterative statements, braces <i>{ }</i> were no longer used
+for blocks. Instead a block was started by a <i>,</i> and ended with a right
+parenthesis. I also found the print statements to be backwards to how I would
+normally think. To print something out, you specify what you want printed
+followed by the keyword <i>print</i>.
 
 E.G.
 ----
-<pre> if ([condition], [do something]) </pre>
+<pre> 
+if ([condition], [do something]) 
+[something] print
+</pre>
 
-
+After I wrote the [program](/samples/misc/FizzBuzz.io) I submitted it as a new
+sample program through a [pull
+request](https://github.com/stevedekorte/io/pull/330) which was merged in
+shortly after.
 
 Artifact #4 -
 ===============================
