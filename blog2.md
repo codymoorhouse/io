@@ -81,7 +81,7 @@ For my final artifact I decided to look at the pull requests that were
 currently listed as outstanding. One [pull
 request](https://github.com/stevedekorte/io/pull/262) in particular was
 authored by [mig-hub](https://github.com/mig-hub). He had an outstanding pull
-request dating back from December 14, 2013. The io repository owner
+request dating back to December 14, 2013. The io repository owner
 [stevedekorte](https://github.com/stevedekorte) stated that he could not
 auto-merge the pull request and was asking for mig-hub to fix it. This is
 where I decided to spring into action.
@@ -89,7 +89,7 @@ where I decided to spring into action.
 My first step into resolving this conflict was to create a new branch,
 appropriately named <b>mig-hub-merge-conflict</b>. The problem with my new
 branch however is that it was a copy of my local branch, which is not the
-intended behavior that I desired. So I went onto GitHub to look at the
+intended repository that I desired. So I went onto GitHub to look at the
 network graph for the io programming language to see where mig-hub's changes
 first started to appear. I then used the command:
 
@@ -97,7 +97,7 @@ first started to appear. I then used the command:
 
 This reset my new branch to the point in time just before mig-hub began to
 make changes. I now could pull all of mig-hub's changes without any conflicts,
-which is exactly what I did. the next command I issued was:
+which is exactly what I did.
 
 <pre>git pull https://github.com/mig-hub/io.git</pre>
 
@@ -109,15 +109,15 @@ merge conflicts that would ensue.
 
 To my surprise there was only one conflict. To my next surprise it was a one
 line json file the size of North America. Because the repository was so old, I
-decided that I would just checkout the latest version because the version
-mig-hub had was ancient. Mig-hub's commit said that it only addressed typos
-within the file for why it was changed. After I did this, there was no more
-merge conflicts. I made a pull request to mig-hub's forked copy of the
-repository with my changes. I then realized that the pull request mig-hub
-created was from a different branch. So I closed the pull request and started
-the entire process over. I just had to add an extra step to make sure that I
-was on the correct branch BEFORE I merged with the upstream/master. I issued
-the command:
+decided that I would just checkout the latest version of that file  because
+the version mig-hub had was ancient. Mig-hub's commit said that it only
+addressed typos within the file for why it was changed. After I did this,
+there was no more merge conflicts. I made a pull request to mig-hub's forked
+copy of the repository with my changes. I then realized that the pull request
+mig-hub created was from a different branch. So I closed the pull request and
+started the entire process over. I just had to add an extra step to make sure
+that I was on the correct branch BEFORE I merged with the upstream/master. I
+issued the command:
 
 <pre>git checkout -b "implicit-declarations"</pre> 
 
@@ -128,12 +128,11 @@ two json files and compares them. I took the master branch version and
 compared it with mig-hub's version. The website was very nice in that it
 highlighted changes with different colors (red - removed, green - added,
 yellow - changed). I looked specifically for yellow and found the typos that
-mig-hub had found quite quickly. I then made the changes and added that as a
-commit to the new [pull request](https://github.com/mig-hub/io/pull/2) I had
-made. I then made a comment on the original [pull
+mig-hub had found. I then made the changes and added that as a commit to the
+new [pull request](https://github.com/mig-hub/io/pull/2) I had made. I then
+made a comment on the original [pull
 request](https://github.com/stevedekorte/io/pull/262) that mig-hub had
-created, letting stevedekorte know that I had applied a fix for
-mig-hub. 
+created, letting stevedekorte know that I had applied a fix for mig-hub. 
 
 Normally I would have rebased in a situation like this, but as I
 don't have any access to mig-hubs forked copy, I decided to go with a merge,
