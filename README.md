@@ -11,6 +11,7 @@ REQUIREMENTS
  * [yajl](https://github.com/lloyd/yajl)
  * [libevent](http://libevent.org/)
  * [pcre](http://www.pcre.org/)
+ * [python v.3.3.0+](https://www.python.org/downloads/)
 
 INSTALLING
 ==========
@@ -55,12 +56,12 @@ The above path will change depending on what you set your `CMAKE_INSTALL_PREFIX`
 Debian or Ubuntu
 ----------------
 
-See OSX instructions.
+See [OSX instructions](#OSX).
 
 Gentoo
 ------
 
-See OSX instructions.
+See [OSX instructions](#OSX).
 
 MS WINDOWS
 ----------

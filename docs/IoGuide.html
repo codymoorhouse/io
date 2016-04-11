@@ -84,7 +84,7 @@
 
 <div class=indexSection><a href="#Exceptions">Exceptions</a></div>
 <div class=indexItem><a href="#Exceptions-Raise">Raise</a></div>
-<div class=indexItem><a href="#ExceptionsTry-and-Catch">try, catch</a></div>
+<div class=indexItem><a href="#Exceptions-Try-and-Catch">try, catch</a></div>
 <div class=indexItem><a href="#Exceptions-Pass">Pass</a></div>
 <div class=indexItem><a href="#Exceptions-Custom-Exceptions">Custom Exceptions</a></div>
 
@@ -2139,7 +2139,7 @@ A simple whois client:
 <pre>
 whois := method(host,
     socket := Socket clone \
-		setHostName("rs.internic.net") setPort(43) 
+		setHost("rs.internic.net") setPort(43) 
     socket connect streamWrite(host, "\n")
     while(socket streamReadNextChunk, nil)
     return socket readBuffer
