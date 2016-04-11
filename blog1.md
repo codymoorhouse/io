@@ -72,8 +72,8 @@ file and fix the spelling accordingly. Once grep would no longer return any
 matches to my specified pattern, I submitted my changes through two pull
 requests and they were merged in.
 
-## Artifact #2 - Resuming the Adventure
-=======================================
+Artifact #2 - Resuming the Adventure
+====================================
 As promised, I am now going to talk about the adventures of getting the io
 language to build properly on OSX. When I followed the README.md instructions,
 as I said earlier, it failed to build on the command <i>make
