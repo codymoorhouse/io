@@ -75,6 +75,8 @@ sample program through a [pull
 request](https://github.com/stevedekorte/io/pull/330) which was merged in
 shortly after.
 
+<img width="850px" height="300px" src="https://ochronus.com/assets/images/hero/fizzbuzz.png"></img>
+
 Artifact #4 - Lost in a Merge Conflict Time Continuum
 =====================================================
 For my final artifact I decided to look at the pull requests that were
