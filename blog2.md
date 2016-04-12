@@ -6,7 +6,7 @@ Table of Contents
 =================
  - [Re-Introduction](#re-introduction)
  - [Artifact #3](#artifact-3---a-can-of-fizzbuzz)
- - [Artifact #4](#artifact-4---catching-up)
+ - [Artifact #4](#artifact-4---lost-in-a-merge-conflict-time-continuum)
 
 Re-Introduction
 ===============
@@ -75,8 +75,8 @@ sample program through a [pull
 request](https://github.com/stevedekorte/io/pull/330) which was merged in
 shortly after.
 
-Artifact #4 - Catching Up
-=========================
+Artifact #4 - Lost in a Merge Conflict Time Continuum
+=====================================================
 For my final artifact I decided to look at the pull requests that were
 currently listed as outstanding. One [pull
 request](https://github.com/stevedekorte/io/pull/262) in particular was
