@@ -97,6 +97,8 @@ first started to appear. I then used the command:
 
 <pre>git reset --hard 8956a60c90f9595c0a61e610c9d00a8d810b3282</pre>
 
+<img src="/network-graph.png"></img>
+
 This reset my new branch to the point in time just before mig-hub began to
 make changes. I now could pull all of mig-hub's changes without any conflicts,
 which is exactly what I did.
